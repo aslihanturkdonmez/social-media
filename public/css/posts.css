@@ -1,0 +1,100 @@
+.profile-head {
+    transform: translateY(3rem)
+}
+
+.cover {
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+img {
+    transition: transform 0.25s ease;
+}
+
+img:hover {
+    -webkit-transform: scale(0.5);
+    /* or some other value */
+    transform: scale(1.1);
+}
+
+
+.divB {
+    max-width: 300px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif
+}
+
+.usersFoto {
+    border: none;
+    margin-right: -15px;
+}
+
+.text-success {
+    background-color: #D7FCDD;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 18px;
+    border-radius: 0 20px 20px 0;
+
+
+}
+
+.alertt {
+    border: 2px dotted #dea4a4;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 18px;
+    border-radius: 20px;
+    display: inline;
+
+}
+
+.parag {
+    font-size: 14px;
+    color: #91a2c2 !important
+}
+
+.btnBir {
+    border-radius: 22px;
+    border: none;
+    height: 40px;
+    width: 100%
+}
+
+
+.btn span {
+    font-size: 14px;
+    font-weight: 500
+}
+
+.btn-dark span {
+    color: #E0DFE7
+}
+
+.btn.info {
+    background: #E4E4E4
+}
+
+.btn.info span {
+    color: #26252B !important
+}
+
+.btn.info:hover {
+    background: #CDCED0 !important
+}
+
+.a {
+    text-align: center;
+    line-height: 3;
+    display: flex;
+    justify-content: center
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+
+    font-family: 'Poppins', sans-serif
+}
