@@ -30,8 +30,6 @@ Route::middleware(['auth:sanctum','verified'])->prefix('user')->group(function()
     Route::get('profile/{user:username}', [ProfileController::class,'index'])->name('profiles.show');
     Route::get('friends',[FriendController::class,'index'])->name('friends');
 
-    //Friends sayfası için route
-    //Route::get('friends/add/{user:username}', [Friendship::class,'add'])->name('add');
 
 });
 
