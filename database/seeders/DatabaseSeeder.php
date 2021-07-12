@@ -32,6 +32,5 @@ class DatabaseSeeder extends Seeder
             'birthday' => '2000-07-25',
         ]);
 
-
     }
 }
