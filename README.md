@@ -33,7 +33,7 @@ gibi işlemler gerçekleştirilebilmektedir.
 Aşağıdaki komutu uygulamanızı kurmak istediğiniz dizinde çalıştırın.
 
 ```bash
-git clone https://github.com/aslihanturkdonmez/social-network.git
+git clone https://github.com/aslihanturkdonmez/social-media.git
 ```
 <ul>
   <li> <code>.env.example</code> dosyasının adını <code>.env</code> olarak değiştirin</li>
