@@ -1,62 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Sosyal Medya Sitesi w/Laravel
 
-## About Laravel
+BTUlendin bir sosyal medya projesidir. Proje içerisinde:
+<ul>
+  <li>Kullanıcı giriş/doğrulama/kayıt işlemleri</li>
+  <li>Arkadaş ekleme/silme</li>
+  <li>Gönderi Paylaşımı</li>
+  <li>Beğeni ve Yorum Atma</li>
+  <li>Etkinlik oluşturma ve etkinliğe katılım sağlama</li>
+</ul>
+gibi işlemler gerçekleştirilebilmektedir.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Teknolojiler
+<ul>
+    <li><a href="https://laravel.com/">Laravel 8</a></li>
+  <li><a href="https://laravel-livewire.com/">Livewire 2.0</a></li>
+  <li><a href="https://jetstream.laravel.com/2.x/introduction.html">Jetstream 2.0</a></li>
+</ul>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Gereksinimler
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<ul>
+  <li><a href="https://getcomposer.org/">Composer</a></li>
+  <li>PHP</li>
+  <li>MySQL</li>
+</ul>
 
-## Learning Laravel
+&emsp;**NOT:** PHP ve MySQL gereksinimlerini XAMPP/WAMP vb. bir web sunucusu kullanarak karşılayabilirsiniz.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## Kurulum
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Aşağıdaki komutu uygulamanızı kurmak istediğiniz dizinde çalıştırın.
 
-## Laravel Sponsors
+```bash
+git clone https://github.com/aslihanturkdonmez/social-network.git
+```
+<ul>
+  <li> <code>.env.example</code> dosyasının adını <code>.env</code> olarak değiştirin</li>
+  <li>Kullanacağınız isimde veritabanı oluşturun (Veritabanına tablo eklemeyin)</li>
+  <li>env dosyasını projenize göre düzenleyin. Örneğin: <code>Veritabanı adı, DB_PORT...</code></li>
+  <li>node modül komutları <br>
+    <pre>npm i
+npm watch</pre>
+  <li>Composer Komutları <br>
+      <pre>composer install
+composer dump-autoload</pre></li>
+    <li>Artisan Komutları
+    <pre>php artisan key:generate
+php artisan migrate --seed
+php artisan storage:link</pre> </li>
+</ul>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+**NOT:** Proje içerisinde mail doğrulama aktif durumdadır. Kapatmak için <a href="https://jetstream.laravel.com/2.x/features/registration.html#email-verification">burayı</a> inceleyebilirsiniz. 
+Eğer mail doğrulama ile çalışacaksanız fake smtp sunucusu sağlayan <a href="https://mailtrap.io/">Mailtrap</a>'i kullanabilirsiniz. *Mailtrap gerçek mail göndermez, gidecek mailleri test etmenizi sağlar.* 
+Mailtrap'e kayıt olduktan sonra gerekli bilgileri aşağıdaki gibi <code>.env</code> dosyasına giriniz. 
+<pre>MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=aaaa //KULLANIZI ADINIZI GİRİNİZ
+MAIL_PASSWORD=1111 //ŞİFRENİZİ GİRİNİZ
+MAIL_FROM_ADDRESS=from@example.com
+MAIL_FROM_NAME=Example</pre>
 
-### Premium Partners
+Eğer manuel olarak kullanıcı doğrulama işlemi gerçekleştirmek isterseniz, kullanıcı kaydından sonra veritabanından *users* tablosunun *email_verified_at* sütununu doldurunuz. Bu işlemden sonra giriş yaptığınızda doğrulama ekranına yönlendirilmeyeceksiniz.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/)**
-- **[OP.GG](https://op.gg)**
+## Görünümler
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
+## Lisans
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
