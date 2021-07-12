@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'mahmutt9',
             'email' => '19360859080@ogrenci.btu.edu.tr',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '$2y$10$ew7jGkjspgE2ksNiNrAHbeIwc4NVht1O//0OZyFPFLIuT5jjaJR0K', // password: 12345678
             'grade' => $grades[rand(0, 4)],
             'branch' => $branches[rand(0, 1)],
             'gender' => 'Erkek',
@@ -36,7 +36,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'Aslii',
             'email' => '18360859040@ogrenci.btu.edu.tr',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '$2y$10$ew7jGkjspgE2ksNiNrAHbeIwc4NVht1O//0OZyFPFLIuT5jjaJR0K', // password: 12345678
             'grade' => $grades[rand(0, 4)],
             'branch' => $branches[rand(0, 1)],
             'gender' => 'Kadın',
@@ -48,7 +48,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'ebru',
             'email' => '18360859008@ogrenci.btu.edu.tr',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '$2y$10$ew7jGkjspgE2ksNiNrAHbeIwc4NVht1O//0OZyFPFLIuT5jjaJR0K', // password: 12345678
             'grade' => $grades[rand(0, 4)],
             'branch' => $branches[rand(0, 1)],
             'gender' => 'Kadın',
@@ -60,7 +60,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'mİkbal',
             'email' => '18360859056@ogrenci.btu.edu.tr',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '123456789', // password: 12345678
             'grade' => $grades[rand(0, 4)],
             'branch' => $branches[rand(0, 1)],
             'gender' => 'Erkek',
@@ -72,7 +72,7 @@ class DatabaseSeeder extends Seeder
             'username' => 'güven',
             'email' => '18360859042@ogrenci.btu.edu.tr',
             'email_verified_at' => now(),
-            'password' => '123456789', // password
+            'password' => '$2y$10$ew7jGkjspgE2ksNiNrAHbeIwc4NVht1O//0OZyFPFLIuT5jjaJR0K', // password: 12345678
             'grade' => $grades[rand(0, 4)],
             'branch' => $branches[rand(0, 1)],
             'gender' => 'Erkek',
