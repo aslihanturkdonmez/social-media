@@ -354,7 +354,6 @@
             </div>
 
             @endif
-
             @if(!Auth::user()->isFriendWith($profile) && Auth::user()->id != $profile->id)
             <div class="col md-9 ml-24 mr-24 mt-32">
                 <div class="text-center text-white mb-3" id="sss">
