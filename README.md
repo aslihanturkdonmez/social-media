@@ -65,7 +65,10 @@ MAIL_FROM_NAME=Example</pre>
 Eğer manuel olarak kullanıcı doğrulama işlemi gerçekleştirmek isterseniz, kullanıcı kaydından sonra veritabanından *users* tablosunun *email_verified_at* sütununu doldurunuz. Bu işlemden sonra giriş yaptığınızda doğrulama ekranına yönlendirilmeyeceksiniz.
 
 ## Görünümler
-
+![Screenshot_1](https://user-images.githubusercontent.com/43846857/132924166-90f53ce2-ec7d-4634-9489-8793e582a638.png)
+![Screenshot_2](https://user-images.githubusercontent.com/43846857/132924170-2e7a6709-671b-4cbe-aee5-134e8abcdf95.png)
+![Screenshot_3](https://user-images.githubusercontent.com/43846857/132924172-bac5f25e-7598-4f57-99ae-468fca25edb9.png)
+![Screenshot_4](https://user-images.githubusercontent.com/43846857/132924175-d7ecc9c0-2ff9-487e-ac9c-c7f605bd103b.png)
 
 ## Lisans
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
