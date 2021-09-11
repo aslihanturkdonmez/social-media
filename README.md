@@ -1,7 +1,7 @@
 
 # Sosyal Medya Sitesi w/Laravel
 
-Uygulamaya göz geçirmek için:<a href="http://btulendin.herokuapp.com/">BTUlendin sitesini ziyaret edebilirsiniz</a>
+Uygulamaya göz atmak için <a href="http://btulendin.herokuapp.com/"> BTUlendin sitesini</a> ziyaret edebilirsiniz
 
 BTUlendin bir sosyal medya projesidir. Proje içerisinde:
 <ul>
